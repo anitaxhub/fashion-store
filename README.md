@@ -1,29 +1,29 @@
-# LUMIÈRE — Fashion Store Website 🛍️
+# LUMIÈRE — Fashion Store Website 
 
 A responsive multi-page fashion e-commerce website built with **HTML, CSS, Bootstrap 5, and JavaScript**.
 
 ---
 
-## 🖥️ Live Preview
+## Live Preview
 
 > Open `index.html` in your browser to view the project.
 
 ---
 
-## ✨ Features
+##  Features
 
-- 🏠 **Home Page** — Hero section, category cards, featured products, promo banner, footer
-- 🛍️ **Products Page** — Product grid with **category filter** (All / Dresses / Tops / Accessories)
-- 🛒 **Cart Page** — Add/remove items, quantity controls, coupon code, order summary
-- 📬 **Contact Page** — Contact form with validation, info section
-- 🔔 **Add to Cart Toast** — Live notification on product add
-- 💾 **LocalStorage Cart** — Cart persists across pages
-- 📱 **Fully Responsive** — Mobile, tablet & desktop
-- 🎨 **Elegant Light Theme** — Cream/gold color palette with Cormorant Garamond typography
+-  **Home Page** — Hero section, category cards, featured products, promo banner, footer
+-  **Products Page** — Product grid with **category filter** (All / Dresses / Tops / Accessories)
+-  **Cart Page** — Add/remove items, quantity controls, coupon code, order summary
+-  **Contact Page** — Contact form with validation, info section
+-  **Add to Cart Toast** — Live notification on product add
+-  **LocalStorage Cart** — Cart persists across pages
+-  **Fully Responsive** — Mobile, tablet & desktop
+-  **Elegant Light Theme** — Cream/gold color palette with Cormorant Garamond typography
 
 ---
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 | Technology | Purpose |
 |---|---|
@@ -36,7 +36,7 @@ A responsive multi-page fashion e-commerce website built with **HTML, CSS, Boots
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 FashionStore/
@@ -51,17 +51,17 @@ FashionStore/
 
 ---
 
-## 🚀 How to Run
+##  How to Run
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/YourUsername/fashion-store.git
+git clone https://github.com/anitaxhub/fashion-store.git
 ```
 2. Open `index.html` in any browser — no build step needed!
 
 ---
 
-## 📸 Screenshots
+## Screenshots
 
 ### Home Page
 ![Home](screenshots/home.png)
@@ -77,7 +77,7 @@ git clone https://github.com/YourUsername/fashion-store.git
 
 ---
 
-## 🎯 Key Concepts Demonstrated
+##  Key Concepts Demonstrated
 
 - Bootstrap 5 **grid system** for responsive layouts
 - CSS **custom properties** (variables) for consistent theming
@@ -89,14 +89,14 @@ git clone https://github.com/YourUsername/fashion-store.git
 
 ---
 
-## 👩‍💻 Author
+##  Author
 
 **Anita** — BSCS Final Year Student  
-📍 Pakistan  
-🔗 [GitHub Profile](https://github.com/anitaxhub)
+Pakistan  
+ [GitHub Profile](https://github.com/anitaxhub)
 
 ---
 
-## 📄 License
+##  License
 
 This project is open source and available under the [MIT License](LICENSE).
