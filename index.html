@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LUMIÈRE — Fashion Store</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand logo" href="index.html">LUMIÈRE</a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <i class="bi bi-list fs-2"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav mx-auto gap-lg-4">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        <div class="d-flex align-items-center gap-3">
+          <a href="cart.html" class="cart-icon position-relative">
+            <i class="bi bi-bag fs-5"></i>
+            <span class="cart-badge" id="cartCount">0</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero-section">
+    <div class="hero-content text-center">
+      <p class="hero-sub fade-up">New Collection 2025</p>
+      <h1 class="hero-title fade-up">Where Style<br/><em>Meets Soul</em></h1>
+      <p class="hero-desc fade-up">Curated fashion for the modern woman — effortless, elegant, iconic.</p>
+      <a href="products.html" class="btn-main fade-up">Shop Now <i class="bi bi-arrow-right ms-2"></i></a>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- CATEGORIES -->
+  <section class="categories-section py-5">
+    <div class="container">
+      <div class="section-header text-center mb-5">
+        <p class="section-tag">Browse By</p>
+        <h2 class="section-title">Shop Categories</h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="category-card" onclick="window.location='products.html'">
+            <div class="category-img cat-1"></div>
+            <div class="category-label">
+              <span>Dresses</span>
+              <i class="bi bi-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="category-card" onclick="window.location='products.html'">
+            <div class="category-img cat-2"></div>
+            <div class="category-label">
+              <span>Tops & Blouses</span>
+              <i class="bi bi-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="category-card" onclick="window.location='products.html'">
+            <div class="category-img cat-3"></div>
+            <div class="category-label">
+              <span>Accessories</span>
+              <i class="bi bi-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED PRODUCTS -->
+  <section class="featured-section py-5">
+    <div class="container">
+      <div class="section-header text-center mb-5">
+        <p class="section-tag">Handpicked</p>
+        <h2 class="section-title">Featured Pieces</h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-6 col-md-3">
+          <div class="product-card">
+            <div class="product-img p1">
+              <div class="product-actions">
+                <button class="action-btn" onclick="addToCart('Ivory Wrap Dress', 4500)"><i class="bi bi-bag-plus"></i></button>
+                <button class="action-btn"><i class="bi bi-heart"></i></button>
+              </div>
+              <span class="product-badge">New</span>
+            </div>
+            <div class="product-info">
+              <p class="product-name">Ivory Wrap Dress</p>
+              <p class="product-price">PKR 4,500</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="product-card">
+            <div class="product-img p2">
+              <div class="product-actions">
+                <button class="action-btn" onclick="addToCart('Sage Linen Blouse', 2800)"><i class="bi bi-bag-plus"></i></button>
+                <button class="action-btn"><i class="bi bi-heart"></i></button>
+              </div>
+            </div>
+            <div class="product-info">
+              <p class="product-name">Sage Linen Blouse</p>
+              <p class="product-price">PKR 2,800</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="product-card">
+            <div class="product-img p3">
+              <div class="product-actions">
+                <button class="action-btn" onclick="addToCart('Blush Midi Skirt', 3200)"><i class="bi bi-bag-plus"></i></button>
+                <button class="action-btn"><i class="bi bi-heart"></i></button>
+              </div>
+              <span class="product-badge sale-badge">Sale</span>
+            </div>
+            <div class="product-info">
+              <p class="product-name">Blush Midi Skirt</p>
+              <p class="product-price">PKR 3,200</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="product-card">
+            <div class="product-img p4">
+              <div class="product-actions">
+                <button class="action-btn" onclick="addToCart('Pearl Drop Earrings', 1500)"><i class="bi bi-bag-plus"></i></button>
+                <button class="action-btn"><i class="bi bi-heart"></i></button>
+              </div>
+            </div>
+            <div class="product-info">
+              <p class="product-name">Pearl Drop Earrings</p>
+              <p class="product-price">PKR 1,500</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-5">
+        <a href="products.html" class="btn-outline">View All Products</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BANNER -->
+  <section class="mid-banner my-5">
+    <div class="container">
+      <div class="banner-box text-center">
+        <p class="section-tag">Limited Time</p>
+        <h2 class="banner-title">Get 20% Off Your<br/>First Order</h2>
+        <p class="banner-desc">Use code <strong>LUMIERE20</strong> at checkout</p>
+        <a href="products.html" class="btn-main">Shop The Sale</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section class="why-section py-5">
+    <div class="container">
+      <div class="row g-4 text-center">
+        <div class="col-6 col-md-3">
+          <div class="why-card">
+            <i class="bi bi-truck why-icon"></i>
+            <h6>Free Delivery</h6>
+            <p>On all orders above PKR 3,000</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="why-card">
+            <i class="bi bi-arrow-counterclockwise why-icon"></i>
+            <h6>Easy Returns</h6>
+            <p>7-day hassle-free return policy</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="why-card">
+            <i class="bi bi-shield-check why-icon"></i>
+            <h6>Secure Payment</h6>
+            <p>100% safe & encrypted checkout</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="why-card">
+            <i class="bi bi-headset why-icon"></i>
+            <h6>24/7 Support</h6>
+            <p>Always here to help you</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TOAST -->
+  <div class="cart-toast" id="cartToast">
+    <i class="bi bi-check-circle-fill me-2"></i> Added to cart!
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <h5 class="logo mb-3">LUMIÈRE</h5>
+          <p class="footer-desc">Fashion that speaks to your soul. Curated with love, crafted with care.</p>
+          <div class="social-links mt-3">
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-pinterest"></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-md-2">
+          <h6 class="footer-heading">Shop</h6>
+          <ul class="footer-links">
+            <li><a href="products.html">All Products</a></li>
+            <li><a href="products.html">Dresses</a></li>
+            <li><a href="products.html">Tops</a></li>
+            <li><a href="products.html">Accessories</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-2">
+          <h6 class="footer-heading">Help</h6>
+          <ul class="footer-links">
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Size Guide</a></li>
+            <li><a href="#">Returns</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h6 class="footer-heading">Newsletter</h6>
+          <p class="footer-desc">Subscribe for style tips & exclusive deals.</p>
+          <div class="newsletter-form">
+            <input type="email" placeholder="your@email.com" class="newsletter-input"/>
+            <button class="newsletter-btn">Subscribe</button>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom text-center mt-4">
+        <p>© 2025 LUMIÈRE Fashion Store. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

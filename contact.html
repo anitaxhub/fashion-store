@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact — LUMIÈRE</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand logo" href="index.html">LUMIÈRE</a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <i class="bi bi-list fs-2"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav mx-auto gap-lg-4">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+        </ul>
+        <div class="d-flex align-items-center gap-3">
+          <a href="cart.html" class="cart-icon position-relative">
+            <i class="bi bi-bag fs-5"></i>
+            <span class="cart-badge" id="cartCount">0</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <div class="page-header text-center">
+    <p class="section-tag">Get In Touch</p>
+    <h1 class="page-title">Contact Us</h1>
+  </div>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact-section py-5">
+    <div class="container">
+      <div class="row g-5 align-items-start">
+
+        <!-- Contact Info -->
+        <div class="col-lg-4">
+          <div class="contact-info-box">
+            <h4 class="mb-4" style="font-family: var(--font-display)">We'd love to<br/><em>hear from you</em></h4>
+            <div class="contact-info-item">
+              <i class="bi bi-geo-alt"></i>
+              <div>
+                <h6>Address</h6>
+                <p>12 Fashion Street, Gulberg III<br/>Lahore, Pakistan</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <i class="bi bi-telephone"></i>
+              <div>
+                <h6>Phone</h6>
+                <p>+92 300 1234567</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <i class="bi bi-envelope"></i>
+              <div>
+                <h6>Email</h6>
+                <p>hello@lumiere.pk</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <i class="bi bi-clock"></i>
+              <div>
+                <h6>Hours</h6>
+                <p>Mon – Sat: 10am – 8pm</p>
+              </div>
+            </div>
+            <div class="social-links mt-4">
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-pinterest"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="col-lg-8">
+          <div class="contact-form-box">
+            <div id="formSuccess" class="form-success" style="display:none">
+              <i class="bi bi-check-circle-fill me-2"></i> Message sent! We'll get back to you within 24 hours.
+            </div>
+            <div class="row g-4">
+              <div class="col-md-6">
+                <div class="form-group-custom">
+                  <label>Full Name</label>
+                  <input type="text" class="form-input-custom" id="contactName" placeholder="Ayesha Khan"/>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group-custom">
+                  <label>Email Address</label>
+                  <input type="email" class="form-input-custom" id="contactEmail" placeholder="ayesha@gmail.com"/>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-group-custom">
+                  <label>Subject</label>
+                  <input type="text" class="form-input-custom" id="contactSubject" placeholder="Order query, return, etc."/>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-group-custom">
+                  <label>Message</label>
+                  <textarea class="form-input-custom" id="contactMessage" rows="5" placeholder="Tell us how we can help you..."></textarea>
+                </div>
+              </div>
+              <div class="col-12">
+                <button class="btn-main" onclick="submitContact()">Send Message <i class="bi bi-send ms-2"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom text-center">
+        <p>© 2025 LUMIÈRE Fashion Store. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
